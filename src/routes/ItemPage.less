@@ -1,0 +1,119 @@
+
+.normal {
+}
+
+.header {
+  background-color: #fff;
+  padding: 1.8em 2em 1em;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+
+  h1 {
+    display: inline;
+    font-size: 1.5em;
+    margin: 0;
+    margin-right: .5em;
+  }
+
+  .rate {
+    padding-left: 20px;
+  }
+
+  .titlebar {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.host, .meta, .meta a {
+  color: #999;
+}
+.meta a {
+  text-decoration: underline;
+}
+
+.content {
+  width: 100%;
+  margin-left: 40px;
+  line-height: 20px;
+}
+
+.poster {
+  width: 400px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.photo {
+  max-width: 100%; max-height: 100%; vertical-align: middle;
+}
+
+.card {
+  display: flex;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 20px 20px 20px 20px;
+}
+.itemname {
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+.itemcontent {
+  margin: 10px 0 10px 0;
+  break-word: break-all;
+}
+
+
+
+
+
+.comments {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 0 2em 2em;
+}
+
+.commentsHeader {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 1em 0;
+}
+
+.commentChildren {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.creator {
+  font-size: 10px;
+  height:16px;
+  margin-top: 5px;
+  line-height: 16px;
+}
+
+.pagination {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.25em;
+  }
+  .poster {
+    width: 150px;
+    height: 225px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .poster {
+    display: none;
+  }
+}
+
