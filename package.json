@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "dw-frontend",
+  "version": "v1.0.0",
   "entry": {
     "index": "./src/index.js"
   },
