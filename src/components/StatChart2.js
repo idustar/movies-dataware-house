@@ -5,14 +5,14 @@ import DataSet from '@antv/data-set';
 class StatChart extends React.Component {
   render() {
     const data = [
-      { label: 'MySQL', series1: 2800, series2: 2260 },
-      { label: 'Hive', series1: 1800, series2: 1300 },
+      { label: 'MySQL', ['select count(*)']: 2800, ['select *']: 2260 },
+      { label: 'Hive', ['select count(*)']: 1800, ['select *']: 1300 },
     ];
     const ds = new DataSet();
     const dv = ds.createView().source(data);
     dv.transform({
       type: 'fold',
-      fields: [ 'series1', 'series2' ], // 展开字段集
+      fields: [ 'select count(*)', 'select *' ], // 展开字段集
       key: 'type', // key字段
       value: 'value', // value字段
     });

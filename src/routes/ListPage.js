@@ -6,7 +6,8 @@ import { listSelector } from '../models/movies/selectors';
 import ItemList from '../components/ItemList';
 import Layout from '../components/Layout';
 
-function ListPage({ loading, movieList, size, page, maxPage, location, prev, next, filter, dispatch }) {
+function ListPage({ loading, movieList, size, page, maxPage, location,
+                    prev, next, filter, dispatch, sqlTime, hiveTime }) {
   return (
     <Layout loading={loading}>
       <div className={styles.normal}>
@@ -21,6 +22,8 @@ function ListPage({ loading, movieList, size, page, maxPage, location, prev, nex
           next={next}
           filter={filter}
           dispatch={dispatch}
+          sqlTime={sqlTime}
+          hiveTime={hiveTime}
         />
       </div>
     </Layout>

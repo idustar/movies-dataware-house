@@ -11,6 +11,7 @@ export default {
     moviesById: {},
     movieList: [],
     size: 0,
+    hiveTime: null,
     ids: [],
     items: [],
     commentPage: 1,
@@ -18,10 +19,13 @@ export default {
     pageSize: 20,
     comments: [],
     filter: {},
+    startQuery: null,
+    endQuery: null
   },
   subscriptions: {
     setup({dispatch, history}) {
       history.listen(({pathname}) => {
+        dispatch({type: 'startQueries'});
         let match = pathToRegexp('/movie/:movieId').exec(pathname);
         if (match) {
           const movieId = match[1];
@@ -150,6 +154,7 @@ export default {
         });
       }
       yield put({ type: 'saveMovies', payload: { movies, filter: { title, start, end, actor, director, genre, len } } });
+
     },
     * fetchTitleLike({ payload: { title, page } }, { call, put }) {
       let items;
@@ -199,7 +204,7 @@ export default {
       }
       return {
         ...state, movieList: movies.data && movies.data.result ? movies.data.result : [],
-        size, filter: {...state.filter, ...filter}
+        size, filter: {...state.filter, ...filter}, endQuery: new Date()
       };
     },
     saveIds(state, {payload: ids}) {
@@ -217,6 +222,16 @@ export default {
         ...state, comments: comments.data.result || [],
         commentTotalSize: comments.data.size,
         commentPage: page
+      };
+    },
+    startQueries(state) {
+      return {
+        ...state, startQuery: new Date(), endQuery: null, hiveTime: null
+      };
+    },
+    setHiveTime(state, {payload: hiveTime}) {
+      return {
+        ...state, hiveTime
       };
     },
   },

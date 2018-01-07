@@ -10,7 +10,7 @@ import {Row, Col, Tag} from 'antd';
 import StatChart2 from './StatChart2';
 
 
-const ItemList = ({loading, items, page, maxPage, location, prev, next, size, filter, dispatch}) => {
+const ItemList = ({loading, items, page, maxPage, location, prev, next, size, filter, dispatch, sqlTime, hiveTime}) => {
   const delTag = (type, e) => {
     const ft = filter;
     ft[type] = '';
@@ -22,7 +22,6 @@ const ItemList = ({loading, items, page, maxPage, location, prev, next, size, fi
 
   const content = (
     <div className={styles.popov}>
-      <StatChart2/>
     </div>
   );
 
@@ -30,11 +29,11 @@ const ItemList = ({loading, items, page, maxPage, location, prev, next, size, fi
     <div className={styles.extraContent}>
       <div className={styles.statItem}>
         <p>MySQL</p>
-        <p>3.62s</p>
+        <p>{sqlTime}s</p>
       </div>
       <div className={styles.statItem}>
         <p>Hive</p>
-        <p>4.88s</p>
+        <p>{hiveTime || '-'}s</p>
       </div>
     </div>
   );
@@ -108,8 +107,8 @@ const ItemList = ({loading, items, page, maxPage, location, prev, next, size, fi
               {
                 items.map(item =>
                   <Col
-                    xs={{span: 8}} lg={{span: 6}} key={item.productId}><MovieItem className={styles.item}
-                                                                                  item={item}/></Col>)
+                    xs={{span: 8}} lg={{span: 6}} key={item.productId}>
+                    <MovieItem className={styles.item} item={item}/></Col>)
               }
             </Masonry></Row> : (loading ?
             <div className={styles.tip}>Searching...</div> :

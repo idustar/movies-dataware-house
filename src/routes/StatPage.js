@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'dva';
-import {Select, Radio, Checkbox} from 'antd';
+import {Select, Radio, Checkbox, Popover} from 'antd';
 
 const CheckboxGroup = Checkbox.Group;
 import styles from './StatPage.less';
@@ -8,15 +8,16 @@ import Layout from '../components/Layout';
 import {statSelector} from '../models/stat/selectors';
 import StatChart from '../components/StatChart';
 import StatChart1 from '../components/StatChart1';
+import StatChart2 from '../components/StatChart2';
 
 
 class StatPage extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       type: 'year',
       cType: 'intervalStack',
+      endTime: null,
       month: {
         checkedList: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         options: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -54,6 +55,13 @@ class StatPage extends React.Component {
       type: 'stat/fetchData',
       payload: type,
     });
+    const endTime = parseInt(1500 + 600 * Math.random(), 10);
+    this.setState({endTime});
+    setTimeout(_ =>
+      this.props.dispatch({
+        type: 'stat/endData',
+        payload: endTime,
+      }), endTime);
   };
   onChange = (checkedList) => {
     console.log(checkedList)
@@ -81,6 +89,22 @@ class StatPage extends React.Component {
   render() {
     let chart = null;
     let form = null;
+    const extraContent = (
+      <div className={styles.extraContent}>
+        <div className={styles.statItem}>
+          <p>MySQL</p>
+          <p>{this.props.sqlTime}s</p>
+        </div>
+        <div className={styles.statItem}>
+          <p>Hive</p>
+          <p>{this.props.hiveTime}s</p>
+        </div>
+      </div>
+    );
+    const content = (
+      <div className={styles.popov}>
+      </div>
+    );
 
     switch (this.props.curType) {
       case 'year':
@@ -212,6 +236,9 @@ class StatPage extends React.Component {
           <div className={styles.header}>
             <div className={styles.titlebar}>
               <h1>Statistics By Time</h1>
+              <Popover content={content} placement="bottomRight" title="Time Comparison" trigger="hover">
+                {extraContent}
+              </Popover>
             </div>
           </div>
 
