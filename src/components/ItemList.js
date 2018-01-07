@@ -17,7 +17,7 @@ class ItemList extends React.Component {
     if (type === 'start') {
       ft.end = '';
     }
-    dispatch({type: 'search/searchFor', payload: ft});
+    this.props.dispatch({type: 'search/searchFor', payload: ft});
   }
 
   constructor(props) {
@@ -80,27 +80,27 @@ class ItemList extends React.Component {
         <div className={styles.header}>
           <div>
             {filter.actor ? <div>
-              <Tag color="#f50" closable onClose={(e) => delTag('actor', e)}>Actor</Tag>
+              <Tag color="#f50" closable onClose={(e) => this.delTag('actor', e)}>Actor</Tag>
               <h1>{filter.actor}</h1> <Link to={`actor/${filter.actor}/1`}>(View his/her coopreation)</Link>
             </div> : null}
             {filter.director ? <div>
-              <Tag color="#108ee9" closable onClose={(e) => delTag('director', e)}>Director</Tag>
+              <Tag color="#108ee9" closable onClose={(e) => this.delTag('director', e)}>Director</Tag>
               <h1>{filter.director}</h1> <Link to={`director/${filter.director}/1`}>(View his/her coopreation)</Link>
             </div> : null}
             {filter.title ? <div>
-              <Tag color="#87d068" closable onClose={(e) => delTag('title', e)}>Title</Tag>
+              <Tag color="#87d068" closable onClose={(e) => this.delTag('title', e)}>Title</Tag>
               <h1>{filter.title}</h1>
             </div> : null}
             {filter.tt ? <div>
-              <Tag color="#87d068" closable onClose={(e) => delTag('tt', e)}>Title</Tag>
+              <Tag color="#87d068" closable onClose={(e) => this.delTag('tt', e)}>Title</Tag>
               <h1>%{filter.tt}%</h1>
             </div> : null}
             {filter.genre ? <div>
-              <Tag color="gold" closable onClose={(e) => delTag('genre', e)}>Genre</Tag>
+              <Tag color="gold" closable onClose={(e) => this.delTag('genre', e)}>Genre</Tag>
               <h1>{filter.genre}</h1>
             </div> : null}
             {filter.start ? <div>
-              <Tag color="lime" closable onClose={(e) => delTag('start', e)}>Date Range</Tag>
+              <Tag color="lime" closable onClose={(e) => this.delTag('start', e)}>Date Range</Tag>
               <h1>{filter.start} ~ {filter.end}</h1>
             </div> : null}
           </div>
