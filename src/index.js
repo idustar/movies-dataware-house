@@ -1,6 +1,7 @@
 import dva, { connect } from 'dva';
 import createLoading from 'dva-loading';
 import 'antd/dist/antd.css';
+import 'ant-design-pro/dist/ant-design-pro.css';
 import './index.html';
 import './index.less';
 
@@ -13,10 +14,10 @@ const app = dva();
 app.use(createLoading());
 
 // 3. Model
-app.model(require('./models/item'));
 app.model(require('./models/user'));
 app.model(require('./models/movies'));
 app.model(require('./models/search'));
+app.model(require('./models/stat'));
 
 // 4. Router
 app.router(require('./router'));

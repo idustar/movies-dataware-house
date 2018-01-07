@@ -5,13 +5,6 @@ module.exports = function webpackConfig(webpackConfig, env) {
   webpackConfig.babel.plugins.push('transform-runtime');
   webpackConfig.babel.plugins.push(["import", { "libraryName": "antd", "style": true }]);
   // Support hmr
-  if (env === 'production') {
-    webpackConfig.babel.plugins.push(new webpackConfig.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }));
-  }
 
   if (env === 'development') {
     webpackConfig.babel.plugins.push(['dva-hmr', {

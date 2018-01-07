@@ -111,6 +111,8 @@
 .header {
   background-color: #fff;
   padding: 1.8em 2em 1em;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 5px solid #037cff;
   // box-shadow: 0 1px 2px rgba(0,0,0,.1);
 
@@ -125,4 +127,53 @@
   width: 100%;
   text-align: center;
   line-height: 42vh;
+}
+
+.extraContent {
+  overflow: hidden;
+  white-space: nowrap;
+  .statItem {
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+    > p:first-child {
+      color: dodgerblue;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
+    > p {
+      color: #4a4a4a;
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0;
+      > span {
+        color: dodgerblue;
+        font-size: 16px;
+      }
+    }
+    &:after {
+      background-color: grey;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 1px;
+      height: 40px;
+      content: '';
+    }
+    &:last-child {
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.popov {
+  width: 400px;
+  overflow: hidden;
+  margin-bottom: -30px;
+
+
 }

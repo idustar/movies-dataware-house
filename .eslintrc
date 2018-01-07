@@ -2,25 +2,34 @@
   "parser": "babel-eslint",
   "extends": "eslint-config-airbnb",
   "rules": {
-    "spaced-comment": [0],
-    "no-unused-vars": [0],
-    "no-empty": [0],
-    "react/wrap-multilines": [0],
-    "react/no-multi-comp": [0],
-    "no-constant-condition": [0],
-    "react/jsx-no-bind": [0],
-    "react/prop-types": [0],
-    "arrow-body-style": [0],
-    "react/prefer-stateless-function": [0],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/forbid-prop-types": [0],
-    "no-restricted-syntax": ["error", "WithStatement"],
-    "no-bitwise": ["error", { "allow": ["~"] }],
-    "semi": [0],
-    "global-require": [0],
-    "no-shadow": [0],
-    "no-useless-computed-key": [0],
-    "no-underscore-dangle": [0]
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    //"semi": ["error", "always"],
+    "no-empty": 0,
+    "comma-dangle": 0,
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-duplicate-case": 2,
+    "no-extra-parens": [2, "functions"],
+    "no-self-compare": 2,
+    "accessor-pairs": 2,
+    "comma-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
+    "constructor-super": 2,
+    "new-cap": [2, {
+      "newIsCap": true,
+      "capIsNew": false
+    }],
+    "new-parens": 2,
+    "no-array-constructor": 2,
+    "no-class-assign": 2,
+    "no-cond-assign": 2,
   },
   "ecmaFeatures": {
     "experimentalObjectRestSpread": true

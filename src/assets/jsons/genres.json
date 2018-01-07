@@ -1,0 +1,554 @@
+[
+  {
+    "genre": "Drama",
+    "count": 9801
+  },
+  {
+    "genre": "Comedy",
+    "count": 9482
+  },
+  {
+    "genre": "Kids & Family",
+    "count": 5390
+  },
+  {
+    "genre": "Horror",
+    "count": 5063
+  },
+  {
+    "genre": "Action",
+    "count": 4238
+  },
+  {
+    "genre": "Action & Adventure",
+    "count": 4035
+  },
+  {
+    "genre": "Music Videos & Concerts",
+    "count": 2663
+  },
+  {
+    "genre": "Mystery & Thrillers",
+    "count": 2659
+  },
+  {
+    "genre": "Romance",
+    "count": 2297
+  },
+  {
+    "genre": "Exercise & Fitness",
+    "count": 2175
+  },
+  {
+    "genre": "Anime & Manga",
+    "count": 1745
+  },
+  {
+    "genre": "Nonfiction - Documentary",
+    "count": 1678
+  },
+  {
+    "genre": "Nonfiction",
+    "count": 1552
+  },
+  {
+    "genre": "Science Fiction",
+    "count": 1523
+  },
+  {
+    "genre": "Westerns",
+    "count": 1473
+  },
+  {
+    "genre": "Art House",
+    "count": 1362
+  },
+  {
+    "genre": "Documentary",
+    "count": 1356
+  },
+  {
+    "genre": "Military & War",
+    "count": 1275
+  },
+  {
+    "genre": "Musicals",
+    "count": 905
+  },
+  {
+    "genre": "Special Interests",
+    "count": 893
+  },
+  {
+    "genre": "Adventure",
+    "count": 861
+  },
+  {
+    "genre": "Sports",
+    "count": 763
+  },
+  {
+    "genre": "faith_&_spirituality",
+    "count": 712
+  },
+  {
+    "genre": "Foreign",
+    "count": 652
+  },
+  {
+    "genre": "Thrillers",
+    "count": 626
+  },
+  {
+    "genre": "Fantasy",
+    "count": 621
+  },
+  {
+    "genre": "Drama - Romantic",
+    "count": 570
+  },
+  {
+    "genre": "Comedy - Romantic",
+    "count": 555
+  },
+  {
+    "genre": "Performing Arts",
+    "count": 547
+  },
+  {
+    "genre": "Drama - Crime",
+    "count": 444
+  },
+  {
+    "genre": "Animation",
+    "count": 431
+  },
+  {
+    "genre": "Family Cinema",
+    "count": 418
+  },
+  {
+    "genre": "International",
+    "count": 348
+  },
+  {
+    "genre": "Music Concert Footage",
+    "count": 323
+  },
+  {
+    "genre": "Action - Crime",
+    "count": 303
+  },
+  {
+    "genre": "Children's Cinema",
+    "count": 303
+  },
+  {
+    "genre": "exercise_&_fitness_-_dance_fitness",
+    "count": 284
+  },
+  {
+    "genre": "exercise_&_fitness_-_yoga",
+    "count": 273
+  },
+  {
+    "genre": "Bollywood",
+    "count": 271
+  },
+  {
+    "genre": "Mystery",
+    "count": 258
+  },
+  {
+    "genre": "ACTION/ADVENTURE",
+    "count": 211
+  },
+  {
+    "genre": "children's_video",
+    "count": 194
+  },
+  {
+    "genre": "Nonfiction - History",
+    "count": 173
+  },
+  {
+    "genre": "Comedy - Stand-up",
+    "count": 149
+  },
+  {
+    "genre": "Music Video",
+    "count": 147
+  },
+  {
+    "genre": "exercise_&_fitness_-_pilates",
+    "count": 146
+  },
+  {
+    "genre": "Reality TV",
+    "count": 145
+  },
+  {
+    "genre": "Gay & Lesbian Video",
+    "count": 141
+  },
+  {
+    "genre": "Nonfiction - Documentary - Biography",
+    "count": 138
+  },
+  {
+    "genre": "Drama - Historical",
+    "count": 130
+  },
+  {
+    "genre": "Gay Cinema",
+    "count": 128
+  },
+  {
+    "genre": "Drama - Biographical",
+    "count": 122
+  },
+  {
+    "genre": "Country - General",
+    "count": 116
+  },
+  {
+    "genre": "Action - Martial Arts",
+    "count": 109
+  },
+  {
+    "genre": "Comedy - Black",
+    "count": 90
+  },
+  {
+    "genre": "Military",
+    "count": 89
+  },
+  {
+    "genre": "exercise_&_fitness_-_kickboxing",
+    "count": 79
+  },
+  {
+    "genre": "Action - Comic",
+    "count": 78
+  },
+  {
+    "genre": "av_genre_drama",
+    "count": 77
+  },
+  {
+    "genre": "exercise_&_fitness_-_aerobics",
+    "count": 75
+  },
+  {
+    "genre": "exercise_&_fitness_-_stretching",
+    "count": 75
+  },
+  {
+    "genre": "Drama - Coming of Age",
+    "count": 75
+  },
+  {
+    "genre": "Horror - Monsters",
+    "count": 69
+  },
+  {
+    "genre": "CHILDREN/FAMILY",
+    "count": 68
+  },
+  {
+    "genre": "Drama - Supernatural",
+    "count": 64
+  },
+  {
+    "genre": "Mystery - Crime",
+    "count": 63
+  },
+  {
+    "genre": "Anime",
+    "count": 61
+  },
+  {
+    "genre": "Childrens Cinema",
+    "count": 59
+  },
+  {
+    "genre": "exercise_&_fitness_-_weight_training",
+    "count": 59
+  },
+  {
+    "genre": "Action - Romantic",
+    "count": 57
+  },
+  {
+    "genre": "Drama - Sports",
+    "count": 57
+  },
+  {
+    "genre": "Animation - Anime",
+    "count": 55
+  },
+  {
+    "genre": "Drama - Family Life",
+    "count": 53
+  },
+  {
+    "genre": "Comedy - Screwball",
+    "count": 53
+  },
+  {
+    "genre": "exercise & fitness - barre method",
+    "count": 51
+  },
+  {
+    "genre": "Childrens Television",
+    "count": 49
+  },
+  {
+    "genre": "Comedy - Teen",
+    "count": 48
+  },
+  {
+    "genre": "Faith & Spirituality",
+    "count": 47
+  },
+  {
+    "genre": "Horror - Slashers",
+    "count": 45
+  },
+  {
+    "genre": "Science Fiction - Space Adventure",
+    "count": 42
+  },
+  {
+    "genre": "Rock - Rock'n'Roll",
+    "count": 41
+  },
+  {
+    "genre": "Horror - Supernatural",
+    "count": 40
+  },
+  {
+    "genre": "Comedy - Campy",
+    "count": 38
+  },
+  {
+    "genre": "Dramas",
+    "count": 37
+  },
+  {
+    "genre": "Comedies",
+    "count": 37
+  },
+  {
+    "genre": "Comedy - Family Life",
+    "count": 37
+  },
+  {
+    "genre": "music_videos_&_concerts",
+    "count": 36
+  },
+  {
+    "genre": "Musicals - Comic",
+    "count": 36
+  },
+  {
+    "genre": "exercise_&_fitness_-_tai_chi",
+    "count": 35
+  },
+  {
+    "genre": "Adventure - Comic",
+    "count": 35
+  },
+  {
+    "genre": "exercise_&_fitness_-_pregnancy_workouts",
+    "count": 34
+  },
+  {
+    "genre": "Mystery - Detectives",
+    "count": 34
+  },
+  {
+    "genre": "Action - Superheroes",
+    "count": 32
+  },
+  {
+    "genre": "Lesbian Cinema",
+    "count": 31
+  },
+  {
+    "genre": "Drama - Religious",
+    "count": 31
+  },
+  {
+    "genre": "MYSTERY/SUSPENSE",
+    "count": 31
+  },
+  {
+    "genre": "anime_&_manga",
+    "count": 31
+  },
+  {
+    "genre": "Family Television",
+    "count": 30
+  },
+  {
+    "genre": "Children",
+    "count": 29
+  },
+  {
+    "genre": "Animation - Cartoons",
+    "count": 29
+  },
+  {
+    "genre": "Pop - General",
+    "count": 29
+  },
+  {
+    "genre": "Drama - Espionage",
+    "count": 29
+  },
+  {
+    "genre": "family_video",
+    "count": 28
+  },
+  {
+    "genre": "Westerns - Action",
+    "count": 27
+  },
+  {
+    "genre": "Action - Law Enforcement",
+    "count": 26
+  },
+  {
+    "genre": "Rock - General",
+    "count": 26
+  },
+  {
+    "genre": "exercise_&_fitness_-_massage",
+    "count": 26
+  },
+  {
+    "genre": "Military - Action",
+    "count": 26
+  },
+  {
+    "genre": "Comedy - Slapstick",
+    "count": 25
+  },
+  {
+    "genre": "Drama - Political",
+    "count": 25
+  },
+  {
+    "genre": "Pop Music Videos",
+    "count": 23
+  },
+  {
+    "genre": "Adventure - Romantic",
+    "count": 22
+  },
+  {
+    "genre": "Comedy - Romance",
+    "count": 22
+  },
+  {
+    "genre": "Comedy > Musical",
+    "count": 22
+  },
+  {
+    "genre": "romance_-_classics",
+    "count": 21
+  },
+  {
+    "genre": "Performing Arts - Theater",
+    "count": 21
+  },
+  {
+    "genre": "Drama > Musical",
+    "count": 21
+  },
+  {
+    "genre": "R&B Music - Soul",
+    "count": 21
+  },
+  {
+    "genre": "Faith and Spirituality - Christianity",
+    "count": 21
+  },
+  {
+    "genre": "Comedy - Sitcom",
+    "count": 20
+  },
+  {
+    "genre": "Comedy - Sports",
+    "count": 20
+  },
+  {
+    "genre": "Children's",
+    "count": 20
+  },
+  {
+    "genre": "Comedy - Satire",
+    "count": 20
+  },
+  {
+    "genre": "Comedy - British",
+    "count": 19
+  },
+  {
+    "genre": "Family",
+    "count": 19
+  },
+  {
+    "genre": "reality_tv",
+    "count": 19
+  },
+  {
+    "genre": "Nonfiction - Instructional",
+    "count": 19
+  },
+  {
+    "genre": "CHRISTMAS",
+    "count": 18
+  },
+  {
+    "genre": "Blues - General",
+    "count": 18
+  },
+  {
+    "genre": "Drama - Hospital",
+    "count": 18
+  },
+  {
+    "genre": "Science Fiction - Action",
+    "count": 18
+  },
+  {
+    "genre": "Nonfiction - Educational",
+    "count": 18
+  },
+  {
+    "genre": "Musicals - Dramatic",
+    "count": 18
+  },
+  {
+    "genre": "Talk Shows",
+    "count": 17
+  },
+  {
+    "genre": "Science Fiction - Futuristic",
+    "count": 17
+  },
+  {
+    "genre": "exercise_&_fitness_-_walking",
+    "count": 17
+  },
+  {
+    "genre": "exercise_&_fitness",
+    "count": 17
+  },
+  {
+    "genre": "rating_pending",
+    "count": 16
+  }
+]

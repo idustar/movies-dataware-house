@@ -102,3 +102,10 @@ export function fetchDirectors({ director, page }) {
   });
 }
 
+export function fetchStatByType({ type }) {
+  if (type === 'season') type = 'month';
+  return request(`${url}/info/${type}`, {
+    method: 'get',
+  });
+}
+

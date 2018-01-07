@@ -25,8 +25,7 @@ const SimpleItem = ({item}) => {
       <Card title={title} bordered={false} onClick={goto}>{content}</Card>
       </Tooltip>
     </div>
-  )
-    ;
+  );
 };
 
 SimpleItem.propTypes = {

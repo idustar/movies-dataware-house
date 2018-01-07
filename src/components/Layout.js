@@ -21,6 +21,7 @@ const Layout = (props) => {
             Amazon Movies
           </Link>
           <div className={styles.search}>
+              <Link className={styles.active} to={'/stat'}><Icon type="compass" /></Link>
             <Popover content={content} placement="bottomRight" title="Search" trigger="click">
               <Link className={styles.active}><Icon type="search" /></Link>
             </Popover>

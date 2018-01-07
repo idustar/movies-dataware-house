@@ -129,13 +129,13 @@ export default {
         } else if (title) {
           movies = yield call(fetchMoviesByTitle, {title, page});
         } else if (start) {
-          movies = yield call(fetchMoviesByDateRange, {start, end, page});
+          movies = yield call(fetchMoviesByDateRange, { start, end, page });
         } else if (actor) {
-          movies = yield call(fetchMoviesByActor, {actor, page});
+          movies = yield call(fetchMoviesByActor, { actor, page });
         } else if (director) {
-          movies = yield call(fetchMoviesByDirector, {director, page});
+          movies = yield call(fetchMoviesByDirector, { director, page });
         } else if (genre) {
-          movies = yield call(fetchMoviesByGenre, {genre, page});
+          movies = yield call(fetchMoviesByGenre, { genre, page });
         }
       } else {
         movies = yield call(fetchMovies, {
@@ -143,20 +143,22 @@ export default {
           query: {
             actors: actor ? [actor] : [],
             directors: director ? [director] : [],
-            genres: genre? [genre] : [],
-            titles: title? [title] : [],
-            dateRanges: start? [{startDate: start, endDate: end}] : [],
+            genres: genre ? [genre] : [],
+            titles: title ? [title] : [],
+            dateRanges: start ? [{ startDate: start, endDate: end }] : [],
           },
         });
       }
-      yield put({type: 'saveMovies', payload: {movies, filter: {title, start, end, actor, director, genre, len}}});
+      yield put({ type: 'saveMovies', payload: { movies, filter: { title, start, end, actor, director, genre, len } } });
     },
-    * fetchTitleLike({payload: {title, page}}, {call, put}) {
+    * fetchTitleLike({ payload: { title, page } }, { call, put }) {
       let items;
-      if (title[title.length - 1] === '_')
-        items = yield call(fetchMoviesByTitleContain, {title: title.substr(0, title.length-1), page});
-      else
+      if (title[title.length - 1] === '_') {
+        items = yield call(fetchMoviesByTitleContain,
+          { title: title.substr(0, title.length - 1), page });
+      } else {
         items = yield call(fetchMoviesByTitleLike, {title, page});
+      }
       yield put({type: 'saveItems', payload: {items}});
     },
     * fetchActorCom({payload: {actor, page}}, {call, put}) {
@@ -195,8 +197,10 @@ export default {
       if (movies && movies.data && movies.data.result) {
         size = movies.data.size ? movies.data.size : 0;
       }
-      return {...state, movieList: movies.data && movies.data.result ? movies.data.result : [],
-        size, filter: {...state.filter, ...filter}};
+      return {
+        ...state, movieList: movies.data && movies.data.result ? movies.data.result : [],
+        size, filter: {...state.filter, ...filter}
+      };
     },
     saveIds(state, {payload: ids}) {
       return {...state, ids};
