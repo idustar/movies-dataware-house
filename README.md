@@ -1,4 +1,4 @@
-# DW Frontend
+# movies-dataware-house
 
 Clone built with [Dva](https://github.com/dvajs/dva).
 
